@@ -1,0 +1,12 @@
+:root {
+  --white: #fff;
+  --navy: #171c28;
+  --black: #444452;
+  --blue-dark-theme: #007bff;
+  --blue-light-theme: #218aff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
