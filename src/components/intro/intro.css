@@ -1,14 +1,27 @@
 @import url("../../App.css");
 
 .intro {
-  /* margin: auto; */
   padding-left: 100px;
   height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   color: var(--black);
+}
+
+.pointing-up {
+  width: 30px;
+  right: 30px;
+  bottom: 30px;
+  cursor: pointer;
+  position: fixed;
+  transition: all 0.3s ease;
+}
+
+.pointing-up:hover {
+  transform: translateY(-15px);
 }
 
 .intro h1 {
@@ -87,6 +100,13 @@
   height: 30px;
 }
 
+@media screen and (min-width: 1200px) {
+  .intro {
+    margin: auto;
+    padding-left: 0;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .intro {
     margin: auto;
@@ -132,7 +152,7 @@
 
   .intro h2 {
     width: 400px;
-    line-height: 60px;
+    line-height: 45px;
     margin-bottom: 80px;
 
     font-size: calc(20 / 16 * 1rem);
