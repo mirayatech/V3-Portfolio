@@ -2,6 +2,7 @@ import "./intro.css";
 import WaveHand from "../../assets/emojis/wave.png";
 import Pointer from "../../assets/emojis/pointright.png";
 import Technologist from "../../assets/emojis/technologist.png";
+import PointingUp from "../../assets/emojis/pointing-up.png";
 
 export function Intro() {
   return (
@@ -30,6 +31,8 @@ export function Intro() {
           </a>
         </span>
       </h3>
+
+      {/* <img src={PointingUp} className="pointing-up" /> */}
     </div>
   );
 }
