@@ -28,5 +28,7 @@ a {
 
 .app {
   display: flex;
+  position: relative;
   flex-direction: column;
+  scroll-behavior: smooth;
 }
