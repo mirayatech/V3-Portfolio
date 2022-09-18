@@ -25,7 +25,7 @@ export function About() {
       </div>
 
       <div className="wrapper">
-        <h3 className="about__title">Skills</h3>
+        <h3 className="about__title last">Skills</h3>
 
         <div className="wrapper__skills">
           <ul>
