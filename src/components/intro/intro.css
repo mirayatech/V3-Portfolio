@@ -1,12 +1,13 @@
 @import url("../../App.css");
 
 .intro {
-  margin: auto;
-  padding-left: 50px;
+  /* margin: auto; */
+  padding-left: 100px;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   color: var(--black);
 }
 
@@ -28,36 +29,42 @@
   font-size: calc(40 / 16 * 1rem);
   margin-bottom: 150px;
 }
+.intro h2 .thick__text {
+  font-size: calc(40 / 16 * 1rem);
+}
 
 .intro h2 .emoji.technologist {
   width: 40px;
   margin-left: 15px;
 }
 
-.intro h3 {
+.intro .intro__contact {
   display: flex;
   font-weight: 400;
   align-items: center;
+}
+
+.intro .intro__contact * {
   font-size: calc(20 / 16 * 1rem);
 }
 
-.intro h3 .emoji.pointer {
+.intro .intro__contact .emoji.pointer {
   width: 30px;
   margin: 10px;
 }
 
-.intro h3 a {
+.intro .intro__contact a {
   padding: 0 3px;
   color: var(--black);
 }
 
-.intro h3 a,
-.intro h3 a:visited {
+.intro .intro__contact a,
+.intro .intro__contact a:visited {
   color: var(--black);
   position: relative;
 }
 
-.intro h3 a::after {
+.intro .intro__contact a::after {
   content: "";
   display: block;
   width: 100%;
@@ -71,11 +78,11 @@
   border-radius: 1px;
 }
 
-.intro h3 a:hover {
+.intro .intro__contact a:hover {
   transition: all 0.3s ease;
   color: #f2f2f2;
 }
 
-.intro h3 a:hover::after {
+.intro .intro__contact a:hover::after {
   height: 30px;
 }

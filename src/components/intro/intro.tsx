@@ -12,7 +12,7 @@ export function Intro() {
       </h1>
 
       <h2>
-        I'm <span className="thick__text"> Miraya</span>, a front-end developer
+        I'm <span className="thick__text">Miraya</span>, a front-end developer
         focused on building beautiful user interfaces & experiences
         <img src={Technologist} alt="" className="emoji technologist" />
       </h2>
