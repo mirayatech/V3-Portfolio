@@ -1,0 +1,45 @@
+.about {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about .wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about .wrapper:first-child {
+  max-width: 800px;
+}
+
+.about .wrapper .about__title {
+  letter-spacing: 1px;
+  margin-right: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--blue-light-theme);
+}
+.about .wrapper__skills {
+  width: 600px;
+  display: flex;
+}
+
+.about .wrapper:nth-child(2) ul h3 {
+  font-weight: 600;
+  line-height: 1.8;
+  color: var(--black);
+}
+
+.about .wrapper:nth-child(2) ul {
+  margin: 0 25px;
+  list-style: none;
+}
+
+.about .wrapper:nth-child(2) ul li {
+  line-height: 1.8;
+  font-weight: 300;
+  font-size: calc(14 / 16 * 1rem);
+}
