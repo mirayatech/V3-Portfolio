@@ -7,7 +7,7 @@ export function Intro() {
   return (
     <div className="intro">
       <h1>
-        Hello !
+        Hello!
         <img src={WaveHand} alt="" className="emoji wave-hand animated" />
       </h1>
 
