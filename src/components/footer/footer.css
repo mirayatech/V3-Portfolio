@@ -1,0 +1,36 @@
+footer {
+  display: flex;
+  align-items: center;
+  padding: 0 50px 30px 50px;
+  justify-content: space-between;
+}
+
+footer h3 {
+  line-height: 1.5;
+}
+
+footer h3 .emoji.rockon {
+  width: 20px;
+  margin: 0 5px;
+}
+
+footer .social-media a {
+  margin: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--blue-light-theme);
+  font-size: calc(14 / 16 * 1rem);
+}
+
+.social-media-mobile {
+  display: none;
+}
+
+.social-media-mobile a {
+  margin: 10px;
+}
+
+.social-media-mobile a * {
+  color: var(--blue-light-theme);
+  font-size: calc(25 / 16 * 1rem);
+}
