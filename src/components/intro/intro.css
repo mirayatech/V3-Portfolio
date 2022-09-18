@@ -1,0 +1,81 @@
+@import url("../../App.css");
+
+.intro {
+  margin: auto;
+  padding-left: 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--black);
+}
+
+.intro h1 {
+  font-weight: 400;
+  font-size: calc(40 / 16 * 1rem);
+  margin-bottom: 150px;
+}
+
+.intro h1 .emoji.wave-hand.animated {
+  width: 40px;
+  margin-left: 30px;
+}
+
+.intro h2 {
+  line-height: 60px;
+  width: 650px;
+  font-weight: 400;
+  font-size: calc(40 / 16 * 1rem);
+  margin-bottom: 150px;
+}
+
+.intro h2 .emoji.technologist {
+  width: 40px;
+  margin-left: 15px;
+}
+
+.intro h3 {
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  font-size: calc(20 / 16 * 1rem);
+}
+
+.intro h3 .emoji.pointer {
+  width: 30px;
+  margin: 10px;
+}
+
+.intro h3 a {
+  padding: 0 3px;
+  color: var(--black);
+}
+
+.intro h3 a,
+.intro h3 a:visited {
+  color: var(--black);
+  position: relative;
+}
+
+.intro h3 a::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--blue-light-theme);
+
+  position: absolute;
+  bottom: -3px;
+  z-index: -1;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+
+.intro h3 a:hover {
+  transition: all 0.3s ease;
+  color: #f2f2f2;
+}
+
+.intro h3 a:hover::after {
+  height: 30px;
+}
