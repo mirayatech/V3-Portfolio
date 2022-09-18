@@ -5,10 +5,6 @@ footer {
   justify-content: space-between;
 }
 
-footer h3 {
-  line-height: 1.5;
-}
-
 footer h3 .emoji.rockon {
   width: 20px;
   margin: 0 5px;
@@ -32,5 +28,30 @@ footer .social-media a {
 
 .social-media-mobile a * {
   color: var(--blue-light-theme);
-  font-size: calc(25 / 16 * 1rem);
+  font-size: calc(20 / 16 * 1rem);
+}
+
+@media screen and (max-width: 800px) {
+  footer h3 {
+    font-size: 0.9rem;
+  }
+
+  footer h3 .emoji.rockon {
+    width: 18px;
+    margin: 0 2px;
+  }
+
+  footer .social-media {
+    display: none;
+  }
+
+  .social-media-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column-reverse;
+  }
 }
