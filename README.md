@@ -1,5 +1,5 @@
 ### 🌐 - V3 Protfolio
-Third version of my personal website
+Third version of my personal website.
 
 #### 📎 Live: https://mirayatech.vercel.app/
 
