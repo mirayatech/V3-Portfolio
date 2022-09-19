@@ -1,4 +1,5 @@
 @import url("../../App.css");
+@import url("./animate.css");
 
 .intro {
   padding-left: 100px;
@@ -32,7 +33,11 @@
 
 .intro h1 .emoji.wave-hand.animated {
   width: 40px;
-  margin-left: 30px;
+  margin-left: 20px;
+  animation-name: wave;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }
 
 .intro h2 {
