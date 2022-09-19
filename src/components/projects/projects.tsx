@@ -1,16 +1,37 @@
-import { HiArrowRight } from "react-icons/hi";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 import "./projects.css";
 import "../../App.css";
 
 export function Projects() {
+  const { ref, inView } = useInView({ threshold: 0.2 });
+
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        transition: {
+          duration: 0.5,
+        },
+      });
+    }
+    if (!inView) {
+      animation.start({
+        opacity: 0,
+      });
+    }
+  }, [inView]);
   return (
-    <div className="projects">
+    <motion.div animate={animation} ref={ref} className="projects">
       <h3 className="projects__title ">Top projects</h3>
       <div className="wrapper">
         {/* Project 1 */}
-        <div className="project">
+        <motion.div className="project">
           <h3 className="projects__title mobile">Top projects</h3>
           <div className="project__wrapper">
             <h3>Instagram Clone</h3>{" "}
@@ -41,7 +62,7 @@ export function Projects() {
             <span> React</span> <span> TypeScript</span> <span>CSS</span>{" "}
             <span> Firebase</span> <span>Framer Motion</span>
           </div>
-        </div>
+        </motion.div>
         {/* Project 2 */}
         <div className="project">
           <div className="project__wrapper">
@@ -231,6 +252,6 @@ export function Projects() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
