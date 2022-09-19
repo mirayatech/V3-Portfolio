@@ -13,6 +13,7 @@
 }
 
 .pointing-up {
+  z-index: 100;
   width: 30px;
   right: 30px;
   bottom: 30px;
