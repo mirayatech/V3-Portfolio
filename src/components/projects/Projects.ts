@@ -32,6 +32,14 @@ export const Projects = [
   },
 
   {
+    name: "Note App",
+    github: "https://github.com/mirayatech/Note-App",
+    link: "https://github.com/mirayatech/Note-App",
+    desc: `A note app with simple functionality for adding, editing, and deleting notes. This app is made with pure React.js and stores notes in the browser's local storage so they won't lose their contents when the page refreshes or tabs are closed. User can use markdown language in the note app.`,
+    dependencies: ["React", "CSS", "Markdown"],
+  },
+
+  {
     name: "GitHub Finder",
     github: "https://github.com/mirayatech/Github-Finder",
     link: "https://ghfinder-phi.vercel.app/",
