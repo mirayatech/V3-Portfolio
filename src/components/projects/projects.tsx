@@ -1,4 +1,6 @@
 import { HiArrowRight } from "react-icons/hi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
+
 import "./projects.css";
 import "../../App.css";
 
@@ -10,13 +12,23 @@ export function Projects() {
         {/* Project 1 */}
         <div className="project">
           <h3 className="projects__title mobile">Top projects</h3>
-          <a
-            href="https://github.com/mirayatech/Instagram-Clone"
-            target="_blank"
-            className="title"
-          >
-            <h3>Instagram Clone</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Instagram Clone</h3>{" "}
+            <span>
+              {/* <FiExternalLink className="arrow" /> */}
+              <a
+                href="https://github.com/mirayatech/Instagram-Clone"
+                target="_blank"
+              >
+                <a
+                  href="https://github.com/mirayatech/Instagram-Clone"
+                  target="_blank"
+                >
+                  <FiGithub className="arrow" />
+                </a>
+              </a>
+            </span>
+          </div>
           <p>
             Instagram clone based on Demon slayer characters. To be able to like
             or comment on posts, you must sign in with Google. The same applies
@@ -32,13 +44,20 @@ export function Projects() {
         </div>
         {/* Project 2 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/E-Commerce"
-            target="_blank"
-            className="title"
-          >
-            <h3>E-Commerce</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>E-Commerce</h3>{" "}
+            <span>
+              <a href="https://mystore-ecommerce.vercel.app/" target="_blank">
+                <FiExternalLink className="arrow" />
+              </a>
+              <a
+                href="https://github.com/mirayatech/E-Commerce"
+                target="_blank"
+              >
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
           <p>
             A fully functional e-commerce application with stripe payment
             gateway.
@@ -50,13 +69,21 @@ export function Projects() {
         </div>
         {/* Project 3 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/Netflix-Clone"
-            target="_blank"
-            className="title"
-          >
-            <h3>Netflix Clone</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Netflix Clone</h3>{" "}
+            <span>
+              <a href="https://netflix-mirayatech.vercel.app/" target="_blank">
+                <FiExternalLink className="arrow" />
+              </a>
+
+              <a
+                href="https://github.com/mirayatech/Netflix-Clone"
+                target="_blank"
+              >
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
 
           <p>
             A Netflix clone built with react and typescript. You are able to
@@ -69,13 +96,14 @@ export function Projects() {
         </div>
         {/* Project 4 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/Note-App"
-            target="_blank"
-            className="title"
-          >
-            <h3>Note App</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Note App</h3>{" "}
+            <span>
+              <a href="https://github.com/mirayatech/Note-App" target="_blank">
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
 
           <p>
             A note app with simple functionality for adding, editing, and
@@ -90,13 +118,20 @@ export function Projects() {
         </div>
         {/* Project 5 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/Github-Finder"
-            target="_blank"
-            className="title"
-          >
-            <h3>GitHub Finder</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>GitHub Finder</h3>{" "}
+            <span>
+              <a href="https://ghfinder-phi.vercel.app/" target="_blank">
+                <FiExternalLink className="arrow" />
+              </a>
+              <a
+                href="https://github.com/mirayatech/Github-Finder"
+                target="_blank"
+              >
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
           <p>
             GitHub Finder makes it super easy to find any random GitHub user and
             see their work. Just start typing any username and with each key
@@ -112,13 +147,21 @@ export function Projects() {
 
         {/* Project 6 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/Anime-Quote"
-            target="_blank"
-            className="title"
-          >
-            <h3>Anime Quote</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Anime Quote</h3>{" "}
+            <span>
+              <a href="https://anime-quotes-rho.vercel.app/">
+                {" "}
+                <FiExternalLink className="arrow" />
+              </a>
+              <a
+                href="https://github.com/mirayatech/Anime-Quote"
+                target="_blank"
+              >
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
           <p>
             Random Amine Quote Generator used to generate random quotes. Each
             time you click on the button, you’ll get a new anime quote. You can
@@ -132,13 +175,21 @@ export function Projects() {
         </div>
         {/* Project 6 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/Tic-Tac-Toe"
-            target="_blank"
-            className="title"
-          >
-            <h3>Tic Tac Toe</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Tic Tac Toe</h3>{" "}
+            <span>
+              <a href="  https://toxo-two.vercel.app/" target="blank">
+                {" "}
+                <FiExternalLink className="arrow" />
+              </a>
+              <a
+                href=" https://github.com/mirayatech/Tic-Tac-Toe "
+                target="_blank"
+              >
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
           <p>
             You play against the computer. First you select to be player X or O.
             The computer will be the opposite of what you've selected. There are
@@ -153,13 +204,19 @@ export function Projects() {
 
         {/* Project 6 */}
         <div className="project">
-          <a
-            href="https://github.com/mirayatech/mitsuki"
-            target="_blank"
-            className="title"
-          >
-            <h3>Mitsuki</h3> <HiArrowRight className="arrow" />
-          </a>
+          <div className="project__wrapper">
+            <h3>Mitsuki</h3>{" "}
+            <span>
+              <a href="https://mitsuki-psi.vercel.app/">
+                {" "}
+                <FiExternalLink className="arrow" />
+              </a>
+
+              <a href="https://github.com/mirayatech/Mitsuki" target="_blank">
+                <FiGithub className="arrow" />
+              </a>
+            </span>
+          </div>
           <p>
             On the first page it is an todo app, where you can easily add, edit,
             or delete your task. There are filters button too that helps you to

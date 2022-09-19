@@ -34,25 +34,29 @@
   margin-bottom: 50px;
 }
 
-.projects .wrapper .project .title {
+.projects .wrapper .project .project__wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   transition: all 0.3s ease;
 }
 
-.projects .wrapper .project .title h3 {
+.projects .wrapper .project .project__wrapper h3 {
   font-weight: 700;
 }
 
-.projects .wrapper .project .title .arrow {
-  margin-left: 10px;
+.projects .wrapper .project .project__wrapper .arrow {
+  margin: 0 5px;
   font-size: calc(20 / 16 * 1rem);
   transition: all 0.3s ease;
 }
 
-.projects .wrapper .project .title:hover .arrow {
-  transform: translateX(8px);
+.projects .wrapper .project .project__wrapper .arrow:first-child {
+  margin-left: 20px;
+}
+
+.projects .wrapper .project .project__wrapper .arrow:hover {
+  transform: translateY(-5px);
 }
 
 .projects .wrapper p {
