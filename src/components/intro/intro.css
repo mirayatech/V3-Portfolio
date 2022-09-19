@@ -105,17 +105,15 @@
   height: 30px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1800px) {
   .intro {
-    margin: auto;
-    padding-left: 0;
+    padding-left: 300px;
   }
 }
 
 @media screen and (max-width: 830px) {
   .intro {
-    margin: auto;
-    padding-left: 0;
+    padding-left: 30px;
   }
 }
 
@@ -186,6 +184,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .intro {
+    padding-left: 15px;
+  }
   .intro h2 {
     width: 340px;
   }

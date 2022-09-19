@@ -9,6 +9,7 @@ export function Projects() {
       <div className="wrapper">
         {/* Project 1 */}
         <div className="project">
+          <h3 className="projects__title mobile">Top projects</h3>
           <a
             href="https://github.com/mirayatech/Instagram-Clone"
             target="_blank"

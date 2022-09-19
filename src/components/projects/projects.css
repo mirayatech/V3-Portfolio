@@ -14,6 +14,15 @@
   color: var(--blue-light-theme);
 }
 
+.projects .projects__title.mobile {
+  display: none;
+  letter-spacing: 1px;
+  margin-right: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--blue-light-theme);
+}
+
 .projects .wrapper {
   /* margin: auto; */
   display: flex;
@@ -137,13 +146,20 @@
 
 @media screen and (max-width: 500px) {
   .projects .projects__title {
+    display: none;
+  }
+  .projects .projects__title.mobile {
+    display: flex;
     margin: 0;
     margin-bottom: 20px;
   }
 
   .projects {
     flex-direction: column;
-
     padding-bottom: 100px;
+  }
+
+  .projects .wrapper {
+    margin: auto;
   }
 }
