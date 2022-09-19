@@ -3,8 +3,29 @@ import WaveHand from "../../assets/emojis/wave.png";
 import Pointer from "../../assets/emojis/pointright.png";
 import Technologist from "../../assets/emojis/technologist.png";
 import PointingUp from "../../assets/emojis/pointing-up.png";
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 export function Intro() {
+  const [showButton, setShowButton] = useState(false);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 800) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    });
+  }, []);
+
   return (
     <div className="intro">
       <h1>
@@ -32,7 +53,28 @@ export function Intro() {
         </span>
       </h3>
 
-      {/* <img src={PointingUp} className="pointing-up" /> */}
+      {showButton === true ? (
+        <motion.img
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                duration: 0.1,
+              },
+            },
+          }}
+          src={PointingUp}
+          className="pointing-up"
+          onClick={goToTop}
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 }
