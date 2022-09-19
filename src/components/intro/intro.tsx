@@ -40,8 +40,10 @@ export function Intro() {
       </h2>
 
       <h3 className="intro__contact intro__text">
-        <span>Get in touch </span>
-        <img src={Pointer} alt="" className="emoji pointer" />
+        <span>
+          Get in touch
+          <img src={Pointer} alt="" className="emoji pointer" />
+        </span>
         <span>
           <a
             href="mailto:mirayaabrodi@icloud.com"

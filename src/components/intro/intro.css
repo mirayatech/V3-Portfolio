@@ -62,6 +62,11 @@
   align-items: center;
 }
 
+.intro .intro__contact span {
+  display: flex;
+  align-items: center;
+}
+
 .intro .intro__contact * {
   font-size: calc(20 / 16 * 1rem);
 }
@@ -110,83 +115,97 @@
   }
 }
 
-@media screen and (max-width: 830px) {
-  .intro {
-    padding-left: 30px;
+@media screen and (max-width: 800px) {
+  .intro h2 {
+    width: 550px;
   }
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 660px) {
+  .intro {
+    padding-left: 50px;
+  }
+
   .intro h1 {
-    font-size: calc(30 / 16 * 1rem);
+    font-size: calc(35 / 16 * 1rem);
+    margin-bottom: 100px;
   }
 
   .intro h1 .emoji.wave-hand.animated {
     width: 35px;
-    margin-left: 20px;
+    margin-left: 18px;
   }
 
   .intro h2 {
-    width: 500px;
-    line-height: 60px;
-    font-size: calc(30 / 16 * 1rem);
+    width: 550px;
+    margin-bottom: 100px;
+    font-size: calc(35 / 16 * 1rem);
   }
   .intro h2 .thick__text {
-    font-size: calc(30 / 16 * 1rem);
+    font-size: calc(35 / 16 * 1rem);
   }
 
   .intro h2 .emoji.technologist {
     width: 35px;
-    margin-left: 10px;
+    margin-left: 18px;
   }
-}
 
-@media screen and (max-width: 530px) {
-  .intro h1 {
-    margin-bottom: 80px;
+  .intro .intro__contact * {
     font-size: calc(20 / 16 * 1rem);
   }
 
-  .intro h1 .emoji.wave-hand.animated {
-    width: 25px;
-    margin-left: 15px;
+  .intro .intro__contact .emoji.pointer {
+    width: 30px;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro {
+    padding-left: 25px;
   }
 
   .intro h2 {
     width: 400px;
-    line-height: 45px;
-    margin-bottom: 80px;
+  }
+}
 
-    font-size: calc(20 / 16 * 1rem);
+@media screen and (max-width: 460px) {
+  .intro {
+    padding-left: 25px;
+  }
+
+  .intro h1 {
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  .intro h1 .emoji.wave-hand.animated {
+    width: 33px;
+  }
+
+  .intro h2 {
+    width: 350px;
+    font-size: calc(30 / 16 * 1rem);
   }
   .intro h2 .thick__text {
-    font-size: calc(20 / 16 * 1rem);
+    font-size: calc(30 / 16 * 1rem);
   }
 
   .intro h2 .emoji.technologist {
-    width: 25px;
-    margin-left: 10px;
+    width: 33px;
+    margin: 0;
+  }
+
+  .intro .intro__contact {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .intro .intro__contact * {
-    font-size: calc(17 / 16 * 1rem);
+    font-size: calc(18 / 16 * 1rem);
   }
 
   .intro .intro__contact .emoji.pointer {
     width: 25px;
-    margin: 10px;
-  }
-
-  .intro .intro__contact a:hover::after {
-    height: 25px;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .intro {
-    padding-left: 15px;
-  }
-  .intro h2 {
-    width: 340px;
   }
 }
