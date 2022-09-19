@@ -10,6 +10,10 @@
   --text-dark-theme: #afafbf;
   --blue-dark-theme: #007bff;
 }
+::selection {
+  color: var(--black);
+  background: #bfe2ff;
+}
 
 * {
   margin: 0;
@@ -48,6 +52,11 @@ body.dark {
   --small-title: var(--white-dark-theme);
   --text: var(--text-dark-theme);
   --blue: var(--blue-dark-theme);
+}
+.emoji,
+.icon,
+.project__language span {
+  user-select: none;
 }
 
 /* Dark Mode Intro*/
