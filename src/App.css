@@ -51,6 +51,9 @@ body.dark {
 }
 
 /* Dark Mode Intro*/
+body .intro .intro__contact a::after {
+  background: var(--blue);
+}
 body .intro .intro__text,
 body .intro .intro__text .thick__text,
 body .intro .intro__text span,
@@ -63,8 +66,15 @@ footer h3 {
   color: var(--small-title);
 }
 
-/* Dark Mode About*/
-body .about__title {
+body .about__title,
+body .project .arrow *,
+body .projects__title,
+footer a {
+  color: var(--blue);
+}
+
+body .project .project__language span {
+  border: 1px solid var(--blue);
   color: var(--blue);
 }
 

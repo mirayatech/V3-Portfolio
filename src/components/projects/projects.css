@@ -11,7 +11,6 @@
   margin-right: 50px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--blue-light-theme);
 }
 
 .projects .projects__title.mobile {
@@ -48,13 +47,8 @@
 
 .projects .wrapper .project .title .arrow {
   margin-left: 10px;
-  color: var(--blue-light-theme);
   font-size: calc(20 / 16 * 1rem);
   transition: all 0.3s ease;
-}
-
-.projects .wrapper .project .title .arrow * {
-  color: var(--blue-light-theme);
 }
 
 .projects .wrapper .project .title:hover .arrow {
@@ -70,9 +64,7 @@
 .project .project__language span {
   margin: 1px;
   padding: 3px 5px;
-  border: 1px solid var(--blue-light-theme);
   font-weight: 600;
-  color: var(--blue-light-theme);
   border-radius: 3px;
   font-size: calc(11 / 16 * 1rem);
 }
