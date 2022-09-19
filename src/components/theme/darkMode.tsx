@@ -1,4 +1,6 @@
 import "./darkmode.css";
+import { BiSun } from "react-icons/bi";
+import { FiMoon } from "react-icons/fi";
 
 export const DarkMode = () => {
   let clickedClass = "clicked";
@@ -32,11 +34,14 @@ export const DarkMode = () => {
   };
 
   return (
-    <>
+    <div className="toggle-btn">
+      <BiSun className="icon" />
       <label className="switch">
         <input type="checkbox" onClick={(event) => switchTheme(event)} />
         <span className="slider round"></span>
       </label>
-    </>
+
+      <FiMoon className="icon xs" />
+    </div>
   );
 };

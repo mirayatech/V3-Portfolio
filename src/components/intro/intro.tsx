@@ -28,25 +28,25 @@ export function Intro() {
 
   return (
     <div className="intro">
-      <h1>
+      <h1 className="intro__text">
         Hello!
         <img src={WaveHand} alt="" className="emoji wave-hand animated" />
       </h1>
 
-      <h2>
-        I'm <span className="thick__text">Miraya</span>, a front-end developer
+      <h2 className="intro__text">
+        I'm <span className="thick__text ">Miraya</span>, a front-end developer
         focused on building beautiful user interfaces & experiences
         <img src={Technologist} alt="" className="emoji technologist" />
       </h2>
 
-      <h3 className="intro__contact">
+      <h3 className="intro__contact intro__text">
         <span>Get in touch </span>
         <img src={Pointer} alt="" className="emoji pointer" />
         <span>
           <a
             href="mailto:mirayaabrodi@icloud.com"
             target="_blank"
-            className="highlight-link"
+            className="highlight-link intro__text"
           >
             mirayaabrodi@icloud.com
           </a>

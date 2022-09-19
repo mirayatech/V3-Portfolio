@@ -20,7 +20,7 @@
   margin-right: 50px;
   font-weight: 600;
   text-transform: uppercase;
-  color: var(--blue-light-theme);
+  /* color: var(--blue-light-theme); */
 }
 
 .about .wrapper .about__title.last {
