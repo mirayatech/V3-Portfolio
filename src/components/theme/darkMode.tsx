@@ -1,4 +1,5 @@
 import "./darkmode.css";
+import { motion } from "framer-motion";
 import { BiSun } from "react-icons/bi";
 import { FiMoon } from "react-icons/fi";
 
@@ -34,7 +35,23 @@ export const DarkMode = () => {
   };
 
   return (
-    <div className="toggle-btn">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          opacity: 0,
+        },
+        visible: {
+          opacity: 1,
+          transition: {
+            delay: 1.2,
+            duration: 0.3,
+          },
+        },
+      }}
+      className="toggle-btn"
+    >
       <BiSun className="icon" />
       <label className="switch">
         <input type="checkbox" onClick={(event) => switchTheme(event)} />
@@ -42,6 +59,6 @@ export const DarkMode = () => {
       </label>
 
       <FiMoon className="icon xs" />
-    </div>
+    </motion.div>
   );
 };

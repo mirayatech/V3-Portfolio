@@ -28,18 +28,76 @@ export function Intro() {
 
   return (
     <div className="intro">
-      <h1 className="intro__text">
+      <motion.h1
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            translateY: "-20px",
+            opacity: 0,
+          },
+          visible: {
+            translateY: "0px",
+            opacity: 1,
+            transition: {
+              delay: 0.2,
+              type: "spring",
+              duration: 0.6,
+            },
+          },
+        }}
+        onClick={goToTop}
+        className="intro__text"
+      >
         Hello!
         <img src={WaveHand} alt="" className="emoji wave-hand animated" />
-      </h1>
+      </motion.h1>
 
-      <h2 className="intro__text">
+      <motion.h2
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            translateY: "-20px",
+            opacity: 0,
+          },
+          visible: {
+            translateY: "0px",
+            opacity: 1,
+            transition: {
+              delay: 0.4,
+              type: "spring",
+              duration: 0.6,
+            },
+          },
+        }}
+        className="intro__text"
+      >
         I'm <span className="thick__text ">Miraya</span>, a front-end developer
         focused on building beautiful user interfaces & experiences
         <img src={Technologist} alt="" className="emoji technologist" />
-      </h2>
+      </motion.h2>
 
-      <h3 className="intro__contact intro__text">
+      <motion.h3
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {
+            translateY: "-20px",
+            opacity: 0,
+          },
+          visible: {
+            translateY: "0px",
+            opacity: 1,
+            transition: {
+              delay: 0.6,
+              type: "spring",
+              duration: 0.6,
+            },
+          },
+        }}
+        className="intro__contact intro__text"
+      >
         <span>
           Get in touch
           <img src={Pointer} alt="" className="emoji pointer" />
@@ -53,7 +111,7 @@ export function Intro() {
             mirayaabrodi@icloud.com
           </a>
         </span>
-      </h3>
+      </motion.h3>
 
       {showButton === true ? (
         <motion.img
