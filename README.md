@@ -1,5 +1,5 @@
 ### 🌐 - V3 Protfolio
-Third version of my personal website. I will add some animations in the future...
+Third version of my personal website. <br> I will add some animations in the future...
 
 #### 📎 Live: https://mirayatech.vercel.app/
 
