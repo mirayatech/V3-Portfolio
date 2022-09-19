@@ -15,17 +15,17 @@ export function Projects() {
           <div className="project__wrapper">
             <h3>Instagram Clone</h3>{" "}
             <span>
-              {/* <FiExternalLink className="arrow" /> */}
+              <a
+                href="https://instagram-demonslayer.vercel.app/"
+                target="_blank"
+              >
+                <FiExternalLink className="arrow" />
+              </a>
               <a
                 href="https://github.com/mirayatech/Instagram-Clone"
                 target="_blank"
               >
-                <a
-                  href="https://github.com/mirayatech/Instagram-Clone"
-                  target="_blank"
-                >
-                  <FiGithub className="arrow" />
-                </a>
+                <FiGithub className="arrow" />
               </a>
             </span>
           </div>
