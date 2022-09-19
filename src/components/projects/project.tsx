@@ -39,10 +39,18 @@ export function Project() {
               <div className="project__wrapper">
                 <h3>{project.name}</h3>
                 <span>
-                  <a href={project.link} target="_blank">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    className="project-link"
+                  >
                     <FiExternalLink className="arrow" />
                   </a>
-                  <a href={project.github} target="_blank">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    className="project-link"
+                  >
                     <FiGithub className="arrow" />
                   </a>
                 </span>

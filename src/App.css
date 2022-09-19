@@ -67,7 +67,9 @@ footer h3 {
 }
 
 body .about__title,
-.projects .wrapper .project .project__wrapper .arrow *,
+body .projects .wrapper .project .project__wrapper .arrow *,
+body .projects .wrapper .project .project__wrapper .arrow,
+body .projects .wrapper .project .project__wrapper a,
 body .projects__title,
 footer a {
   color: var(--blue);
