@@ -1,23 +1,70 @@
 import { DarkMode } from "../components/theme/darkMode";
 import "./nav.css";
 import "./darkmode.css";
-import { useState } from "react";
-
+import { motion } from "framer-motion";
 export function Nav() {
   return (
     <nav>
       <DarkMode />
 
       <div className="nav__links">
-        <a href="#about">
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 1,
+                duration: 0.3,
+              },
+            },
+          }}
+          href="#about"
+        >
           <span>01.</span> About
-        </a>
-        <a href="#skills">
+        </motion.a>
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 1,
+                duration: 0.3,
+              },
+            },
+          }}
+          href="#skills"
+        >
           <span>02.</span> Skills
-        </a>
-        <a href="#projects">
+        </motion.a>
+        <motion.a
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              opacity: 0,
+            },
+            visible: {
+              opacity: 1,
+              transition: {
+                delay: 1,
+                duration: 0.3,
+              },
+            },
+          }}
+          href="#projects"
+        >
           <span>03.</span> Projects
-        </a>
+        </motion.a>
       </div>
     </nav>
   );

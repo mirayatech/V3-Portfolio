@@ -36,7 +36,7 @@
   width: 40px;
   margin-left: 20px;
   animation-name: wave;
-  animation-delay: 1s;
+  animation-delay: 1.3s;
   animation-duration: 1s;
   animation-fill-mode: both;
 }

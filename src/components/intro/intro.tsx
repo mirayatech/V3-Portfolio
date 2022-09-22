@@ -44,7 +44,7 @@ export function Intro() {
             transition: {
               delay: 0.2,
               type: "spring",
-              duration: 0.6,
+              duration: 0.8,
             },
           },
         }}
@@ -69,7 +69,7 @@ export function Intro() {
             transition: {
               delay: 0.4,
               type: "spring",
-              duration: 0.6,
+              duration: 1,
             },
           },
         }}
@@ -94,7 +94,7 @@ export function Intro() {
             transition: {
               delay: 0.6,
               type: "spring",
-              duration: 0.6,
+              duration: 1.5,
             },
           },
         }}
