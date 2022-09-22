@@ -1,0 +1,20 @@
+@import url("../../App.css");
+
+/* 
+  --background-color: var(--body--dark-theme);
+  --title: var(--title-dark-theme);
+  --text: var(--text-dark-theme);
+  --blue: var(--blue-dark-theme); */
+
+body.dark .about__title,
+body.dark #about .wrapper .thick__text {
+  color: var(--title);
+}
+
+body.dark #about .wrapper p {
+  color: var(--text);
+}
+
+body.dark #about .wrapper p {
+  color: var(--text);
+}

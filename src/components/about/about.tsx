@@ -1,9 +1,11 @@
 import "./about.css";
+import "./darkmode.css";
 import "../../App.css";
-import { Skill } from "./skill";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
+
+import technologist from "../../assets/emojis/technologist.png";
 
 export function About() {
   const { ref, inView } = useInView({ threshold: 0.2 });
@@ -15,7 +17,7 @@ export function About() {
       animation.start({
         opacity: 1,
         transition: {
-          // delay: 0.1,
+          delay: 0.5,
           duration: 0.5,
         },
       });
@@ -28,9 +30,11 @@ export function About() {
   }, [inView]);
 
   return (
-    <div className="about">
-      <motion.div animate={animation} ref={ref} className="wrapper">
-        <h3 className="about__title">Background</h3>
+    <motion.div animate={animation} ref={ref} id="about">
+      <div className="wrapper">
+        <h3 className="about__title">
+          <span className="primary-color">01.</span>Background
+        </h3>
 
         <p>
           I’m a 19 year old self taught{" "}
@@ -48,9 +52,10 @@ export function About() {
           </span>
           , I enjoy reading, drawing and working out.
         </p>
-      </motion.div>
-
-      <Skill />
-    </div>
+      </div>
+      <div className="about__img">
+        <img src={technologist} alt="emoji technologist" />
+      </div>
+    </motion.div>
   );
 }
