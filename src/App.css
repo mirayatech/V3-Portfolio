@@ -33,9 +33,6 @@ a {
 }
 
 body {
-  display: flex;
-  position: relative;
-  flex-direction: column;
   scroll-behavior: smooth;
   color: var(--text);
   background: var(--background-color);
@@ -71,7 +68,8 @@ body .about .wrapper p .thick__text,
 body .toggle-btn .icon,
 body .about .wrapper .wrapper__skills h3,
 .projects .project h3,
-footer h3 {
+footer h3,
+body .nav__links .nav__links--link {
   color: var(--small-title);
 }
 

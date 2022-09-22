@@ -1,9 +1,7 @@
 .toggle-btn {
+  z-index: 200;
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 30px;
-  right: 30px;
 }
 
 .toggle-btn .icon {
@@ -69,7 +67,6 @@ input:checked + .slider:before {
   transform: translateX(22px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
