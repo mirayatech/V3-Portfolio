@@ -2,6 +2,7 @@
 @import url("./animate.css");
 
 .intro {
+  margin-top: -50px;
   padding-left: 100px;
   height: 100vh;
   display: flex;
@@ -29,7 +30,7 @@
 .intro h1 {
   font-weight: 400;
   font-size: calc(40 / 16 * 1rem);
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 
 .intro h1 .emoji.wave-hand.animated {
@@ -46,7 +47,7 @@
   width: 650px;
   font-weight: 400;
   font-size: calc(40 / 16 * 1rem);
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .intro h2 .thick__text {
   font-size: calc(40 / 16 * 1rem);
