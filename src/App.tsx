@@ -8,7 +8,7 @@ export function App() {
       <Intro />
       <About />
       <Skills />
-      {/* <Project /> */}
+      <Project />
       <Footer />
     </div>
   );

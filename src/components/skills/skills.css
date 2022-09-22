@@ -51,7 +51,7 @@
   letter-spacing: 1px;
   color: var(--grey);
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 920px) {
@@ -88,7 +88,6 @@
 
   #skills .wrapper .box .box__name {
     text-align: center;
-    font-size: 0.9rem;
   }
 }
 

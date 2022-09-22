@@ -3,3 +3,8 @@
 body footer h3 {
   color: var(--title);
 }
+
+body footer .social-media a,
+body .social-media-mobile a * {
+  color: var(--blue);
+}

@@ -1,0 +1,21 @@
+@import url("../../App.css");
+
+#projects .projects__title,
+#projects .wrapper .project .project__wrapper h3 {
+  color: var(--title);
+}
+
+#projects .projects__title .primary-color,
+#projects .wrapper .project .project__wrapper .arrow * {
+  color: var(--blue);
+}
+
+#projects .wrapper p {
+  color: var(--text);
+}
+
+.project .project__language span {
+  color: var(--blue);
+
+  border: 1px solid var(--blue);
+}
