@@ -6,6 +6,10 @@ footer {
   justify-content: space-between;
 }
 
+footer h3 {
+  font-weight: 700;
+}
+
 footer h3 .emoji.rockon {
   width: 20px;
   margin: 0 5px;

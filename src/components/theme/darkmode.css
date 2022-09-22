@@ -1,11 +1,8 @@
 .toggle-btn {
   z-index: 200;
   display: flex;
-  top: 30px;
-  right: 30px;
 
   align-items: center;
-  position: absolute;
 }
 
 .toggle-btn .icon {

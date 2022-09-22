@@ -1,0 +1,17 @@
+@import url("../App.css");
+
+body.light nav .nav__links a {
+  color: var(---black);
+}
+
+body nav {
+  background-color: var(--body);
+}
+
+body.dark nav .nav__links a {
+  color: var(--title);
+}
+
+body nav .nav__links a:hover {
+  color: var(--blue);
+}

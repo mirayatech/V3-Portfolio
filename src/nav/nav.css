@@ -1,0 +1,22 @@
+@import url("../App.css");
+
+nav {
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 30px;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav__links a {
+  font-size: 0.9rem;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+nav .nav__links a span {
+  color: var(--blue);
+}

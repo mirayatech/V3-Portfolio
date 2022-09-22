@@ -1,6 +1,6 @@
 @import url("../../App.css");
 #about {
-  padding: 100px 0 200px 0;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

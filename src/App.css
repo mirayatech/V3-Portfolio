@@ -20,6 +20,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: 500;
   box-sizing: border-box;
   color: var(--black);
   font-family: "Open Sans", sans-serif;
@@ -36,24 +37,26 @@ a {
 
 .app {
   overflow: hidden;
-
   position: relative;
+  scroll-behavior: smooth;
 }
 
 body {
   scroll-behavior: smooth;
   color: var(--text);
-  background: var(--background-color);
+  background: var(--body);
   transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
 }
 
 body.light {
-  --background-color: var(--white);
+  --text: var(--black);
+
+  --body: var(--white);
   --blue: var(--blue-light-theme);
 }
 
 body.dark {
-  --background-color: var(--body--dark-theme);
+  --body: var(--body--dark-theme);
   --title: var(--title-dark-theme);
   --text: var(--text-dark-theme);
   --blue: var(--blue-dark-theme);
