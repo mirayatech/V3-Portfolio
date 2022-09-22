@@ -35,6 +35,8 @@ a {
 }
 
 .app {
+  overflow: hidden;
+
   position: relative;
 }
 
@@ -60,4 +62,38 @@ body.dark {
 .icon,
 .project__language span {
   user-select: none;
+}
+
+body.light::-webkit-scrollbar {
+  margin-right: 30px;
+  background-color: rgb(225, 225, 225);
+  width: 8px;
+}
+body.light::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body.light::-webkit-scrollbar-thumb {
+  background-color: var(--text-dark-theme);
+  border-radius: 16px;
+  border: none;
+}
+body.light::-webkit-scrollbar-button {
+  display: none;
+}
+
+body.dark::-webkit-scrollbar {
+  margin-right: 30px;
+  background-color: #283043;
+  width: 8px;
+}
+body.dark::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+body.dark::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 16px;
+  border: none;
+}
+body::-webkit-scrollbar-button {
+  display: none;
 }

@@ -57,12 +57,12 @@
 @media screen and (min-width: 1500px) {
   #skills .skills__title,
   #skills .skills__title .primary-color {
-    padding-left: 45px;
+    padding-left: 35px;
     font-size: calc(20 / 16 * 1rem);
   }
 
   #skills .wrapper {
-    grid-template-columns: repeat(5, 240px);
+    grid-template-columns: repeat(5, 200px);
   }
   #skills .wrapper .box {
     margin-bottom: 30px;
