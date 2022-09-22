@@ -30,9 +30,10 @@ export function Skills() {
   useEffect(() => {
     if (inView) {
       animation.start({
+        y: "-20px",
         opacity: 1,
         transition: {
-          delay: 0.2,
+          delay: 0.5,
           duration: 0.5,
         },
       });

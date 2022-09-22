@@ -1,0 +1,8 @@
+@import url("../../App.css");
+
+.intro h1,
+.intro h2,
+.intro span,
+.intro .intro__contact a {
+  color: var(--title);
+}

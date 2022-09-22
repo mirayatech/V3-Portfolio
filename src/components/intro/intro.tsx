@@ -1,4 +1,6 @@
 import "./intro.css";
+import "./darkmode.css";
+
 import WaveHand from "../../assets/emojis/wave.png";
 import Pointer from "../../assets/emojis/pointright.png";
 import Technologist from "../../assets/emojis/technologist.png";
