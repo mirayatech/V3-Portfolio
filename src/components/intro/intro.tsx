@@ -42,7 +42,7 @@ export function Intro() {
             translateY: "0px",
             opacity: 1,
             transition: {
-              delay: 0.2,
+              delay: 0.3,
               type: "spring",
               duration: 0.8,
             },
