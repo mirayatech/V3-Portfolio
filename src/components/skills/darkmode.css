@@ -1,0 +1,17 @@
+@import url("../../App.css");
+
+#skills .skills__title {
+  color: var(--title);
+}
+
+#skills .skills__title .primary-color {
+  color: var(--blue);
+}
+
+#skills .wrapper .box .box__icon * {
+  color: var(--blue);
+}
+
+#skills .wrapper .box .box__name {
+  color: var(--text);
+}

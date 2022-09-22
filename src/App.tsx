@@ -1,4 +1,4 @@
-import { Intro, About, Project, Footer } from "./components/index";
+import { Intro, About, Project, Footer, Skills } from "./components/index";
 import { DarkMode } from "./components/theme/darkMode";
 
 export function App() {
@@ -7,8 +7,9 @@ export function App() {
       <DarkMode />
       <Intro />
       <About />
-      <Project />
-      <Footer />
+      <Skills />
+      {/* <Project />
+      <Footer /> */}
     </div>
   );
 }

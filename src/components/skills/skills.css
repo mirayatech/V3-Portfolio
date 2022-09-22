@@ -1,0 +1,119 @@
+@import url("../../App.css");
+
+#skills {
+  display: flex;
+  padding: 100px 0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#skills .skills__wrapper {
+  margin: auto;
+}
+
+#skills .skills__title,
+#skills .skills__title .primary-color {
+  margin: 0 auto 50px auto;
+  font-size: calc(18 / 16 * 1rem);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#skills .skills__title .primary-color {
+  color: var(--blue-light-theme);
+}
+
+#skills .wrapper {
+  display: grid;
+  grid-gap: 50px 100px;
+  justify-content: center;
+  grid-template-columns: repeat(5, auto);
+}
+
+#skills .wrapper .box {
+  /* margin: 30px 15px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#skills .wrapper .box .box__icon {
+  font-size: calc(35 / 16 * 1rem);
+  margin-bottom: 10px;
+}
+
+#skills .wrapper .box .box__icon * {
+  color: var(--blue-light-theme);
+}
+
+#skills .wrapper .box .box__name {
+  letter-spacing: 1px;
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 920px) {
+  #skills .wrapper {
+    grid-gap: 50px;
+    grid-template-columns: repeat(5, auto);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #skills .wrapper {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  #skills .skills__title,
+  #skills .skills__title .primary-color {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #skills .wrapper {
+    grid-template-columns: repeat(3, 100px);
+  }
+
+  #skills .skills__title,
+  #skills .skills__title .primary-color {
+    padding-left: 20px;
+  }
+
+  #skills .wrapper .box .box__icon {
+    font-size: calc(30 / 16 * 1rem);
+  }
+
+  #skills .wrapper .box .box__name {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #skills .skills__title,
+  #skills .skills__title .primary-color {
+    padding-left: 10px;
+
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  /* #skills .skills__title,
+  #skills .skills__title .primary-color {
+    text-align: center;
+    padding: 0;
+  } */
+
+  #skills .wrapper {
+    grid-template-columns: repeat(3, 70px);
+  }
+
+  #skills .wrapper .box .box__name {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
