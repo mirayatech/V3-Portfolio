@@ -1,9 +1,10 @@
-import { Intro, About, Project, Footer, Nav } from "./components/index";
+import { Intro, About, Project, Footer } from "./components/index";
+import { DarkMode } from "./components/theme/darkMode";
 
 export function App() {
   return (
     <div className="app">
-      <Nav />
+      <DarkMode />
       <Intro />
       <About />
       <Project />

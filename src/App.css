@@ -32,6 +32,10 @@ a {
   text-decoration: none;
 }
 
+.app {
+  position: relative;
+}
+
 body {
   scroll-behavior: smooth;
   color: var(--text);
