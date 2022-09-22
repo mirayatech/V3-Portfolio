@@ -173,7 +173,7 @@
 
 @media screen and (max-width: 460px) {
   .intro {
-    padding-left: 25px;
+    padding-left: 30px;
   }
 
   .intro h1 {
@@ -208,5 +208,11 @@
 
   .intro .intro__contact .emoji.pointer {
     width: 25px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .intro {
+    padding-left: 20px;
   }
 }
