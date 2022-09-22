@@ -8,3 +8,13 @@ body footer .social-media a,
 body .social-media-mobile a * {
   color: var(--blue);
 }
+
+body.dark .social-media a:hover,
+body.dark .social-media-mobile a:hover * {
+  color: var(--title);
+}
+
+body.light .social-media a:hover,
+body.light .social-media-mobile a:hover * {
+  color: #245995;
+}

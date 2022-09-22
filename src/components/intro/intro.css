@@ -23,7 +23,7 @@
 }
 
 .pointing-up:hover {
-  transform: translateY(-15px);
+  transform: translateY(-10px);
 }
 
 .intro h1 {
@@ -110,9 +110,13 @@
   height: 30px;
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1500px) {
   .intro {
-    padding-left: 300px;
+    padding-left: 530px;
+  }
+
+  .pointing-up {
+    width: 45px;
   }
 }
 

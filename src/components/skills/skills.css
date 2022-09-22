@@ -54,6 +54,29 @@
   font-size: 0.9rem;
 }
 
+@media screen and (min-width: 1500px) {
+  #skills .skills__title,
+  #skills .skills__title .primary-color {
+    padding-left: 45px;
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  #skills .wrapper {
+    grid-template-columns: repeat(5, 240px);
+  }
+  #skills .wrapper .box {
+    margin-bottom: 30px;
+  }
+
+  #skills .wrapper .box .box__icon {
+    font-size: calc(60 / 16 * 1rem);
+  }
+
+  #skills .wrapper .box .box__name {
+    letter-spacing: 1px;
+  }
+}
+
 @media screen and (max-width: 920px) {
   #skills .wrapper {
     grid-gap: 50px;

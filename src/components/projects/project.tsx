@@ -27,7 +27,6 @@ export function Project() {
         y: "-20px",
         opacity: 1,
         transition: {
-          // delay: 0.5,
           duration: 0.5,
         },
       });

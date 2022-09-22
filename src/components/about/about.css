@@ -1,6 +1,6 @@
 @import url("../../App.css");
 #about {
-  padding: 100px 0;
+  padding: 100px 0 200px 0;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -35,9 +35,25 @@
   font-size: calc(18 / 16 * 1rem);
 }
 
-/* #about .wrapper .thick__text {
-  font-weight: 600;
-} */
+@media screen and (min-width: 1500px) {
+  #about .wrapper {
+    max-width: 700px;
+  }
+
+  #about .about__img img {
+    width: 200px;
+  }
+
+  #about .wrapper .about__title,
+  #about .wrapper .about__title .primary-color {
+    font-size: calc(20 / 16 * 1rem);
+  }
+
+  #about .wrapper p,
+  #about .wrapper p .thick__text {
+    font-size: calc(20 / 16 * 1rem);
+  }
+}
 
 @media screen and (max-width: 800px) {
   #about {
