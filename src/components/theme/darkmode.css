@@ -1,7 +1,7 @@
 .toggle-btn {
   z-index: 200;
   display: flex;
-  top: 90px;
+  top: 30px;
   right: 30px;
 
   align-items: center;

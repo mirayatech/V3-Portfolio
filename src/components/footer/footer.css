@@ -1,3 +1,4 @@
+@import url("../../App.css");
 footer {
   display: flex;
   align-items: center;
@@ -27,7 +28,7 @@ footer .social-media a {
 
 .social-media-mobile a * {
   color: var(--blue-light-theme);
-  font-size: calc(20 / 16 * 1rem);
+  font-size: calc(25 / 16 * 1rem);
 }
 
 @media screen and (max-width: 800px) {
@@ -44,7 +45,7 @@ footer .social-media a {
     display: none;
   }
 
-  .social-media-mobile {
+  footer .social-media-mobile {
     display: flex;
   }
 }

@@ -8,8 +8,8 @@ export function App() {
       <Intro />
       <About />
       <Skills />
-      {/* <Project />
-      <Footer /> */}
+      {/* <Project /> */}
+      <Footer />
     </div>
   );
 }

@@ -7,6 +7,8 @@ import {
   TbBrandGithub,
 } from "react-icons/tb";
 
+import "./darkmode.css";
+
 export function Footer() {
   return (
     <footer>
