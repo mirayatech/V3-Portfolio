@@ -7,6 +7,7 @@ import Technologist from "../../assets/emojis/technologist.png";
 import PointingUp from "../../assets/emojis/pointing-up.png";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { RoughNotation } from "react-rough-notation";
 
 export function Intro() {
   const [showButton, setShowButton] = useState(false);
@@ -104,7 +105,15 @@ export function Intro() {
           Get in touch
           <img src={Pointer} alt="" className="emoji pointer" />
         </span>
-        <span>
+        <RoughNotation
+          show
+          type="highlight"
+          strokeWidth={2}
+          animationDelay={1400}
+          animationDuration={2000}
+          color="#007bff"
+        >
+          {" "}
           <a
             href="mailto:mirayaabrodi@icloud.com"
             target="_blank"
@@ -112,7 +121,7 @@ export function Intro() {
           >
             mirayaabrodi@icloud.com
           </a>
-        </span>
+        </RoughNotation>
       </motion.h3>
 
       {showButton === true ? (

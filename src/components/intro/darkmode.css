@@ -2,7 +2,6 @@
 
 .intro h1,
 .intro h2,
-.intro span,
-.intro .intro__contact a {
+.intro span {
   color: var(--title);
 }

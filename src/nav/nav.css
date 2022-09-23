@@ -12,11 +12,7 @@ nav {
 }
 
 nav .nav__links a {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 30px;
   transition: all 0.3s ease;
-}
-
-nav .nav__links a span {
-  color: var(--blue);
 }

@@ -78,36 +78,8 @@
 }
 
 .intro .intro__contact a {
-  padding: 0 3px;
-  color: var(--black);
-}
-
-.intro .intro__contact a,
-.intro .intro__contact a:visited {
-  color: var(--black);
-  position: relative;
-}
-
-.intro .intro__contact a::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: var(--blue);
-  position: absolute;
-  bottom: -3px;
-  z-index: -1;
-  transition: all 0.3s ease;
-  border-radius: 1px;
-}
-
-.intro .intro__contact a:hover {
-  transition: all 0.3s ease;
-  color: #f2f2f2;
-}
-
-.intro .intro__contact a:hover::after {
-  height: 30px;
+  padding: 0 5px;
+  color: var(--white);
 }
 
 @media screen and (min-width: 1500px) {

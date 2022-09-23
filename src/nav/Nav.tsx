@@ -25,7 +25,7 @@ export function Nav() {
           }}
           href="#about"
         >
-          <span>01.</span> About
+          About
         </motion.a>
         <motion.a
           initial="hidden"
@@ -44,7 +44,7 @@ export function Nav() {
           }}
           href="#skills"
         >
-          <span>02.</span> Skills
+          Skills
         </motion.a>
         <motion.a
           initial="hidden"
@@ -63,7 +63,7 @@ export function Nav() {
           }}
           href="#projects"
         >
-          <span>03.</span> Projects
+          Projects
         </motion.a>
       </div>
     </nav>
