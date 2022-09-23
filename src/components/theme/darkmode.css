@@ -1,3 +1,5 @@
+@import url("../../App.css");
+
 .toggle-btn {
   z-index: 200;
   display: flex;
@@ -5,8 +7,15 @@
   align-items: center;
 }
 
+body.dark .toggle-btn .icon * {
+  color: var(--title);
+}
+
+.toggle-btn .icon * {
+  color: var(--black);
+}
+
 .toggle-btn .icon {
-  color: black;
   font-size: calc(21 / 16 * 1rem);
 }
 

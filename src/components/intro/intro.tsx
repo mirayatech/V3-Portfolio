@@ -21,7 +21,7 @@ export function Intro() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 800) {
+      if (window.scrollY > 600) {
         setShowButton(true);
       } else {
         setShowButton(false);

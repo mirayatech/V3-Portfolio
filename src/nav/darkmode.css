@@ -8,10 +8,22 @@ body nav {
   background-color: var(--body);
 }
 
-body.dark nav .nav__links a {
+body.dark nav .nav__links a,
+body.dark .hamburger .hamburger__menu a,
+body.dark .hamburger button * {
   color: var(--title);
 }
 
 body nav .nav__links a:hover {
   color: var(--blue);
+}
+
+body.dark .hamburger .hamburger__menu {
+  border: 1px solid #303b53;
+  background-color: #1e2534;
+}
+
+body.dark .hamburger .hamburger__menu a {
+  color: var(--title);
+  border-bottom: 1px solid #303b53;
 }

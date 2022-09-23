@@ -16,3 +16,45 @@ nav .nav__links a {
   padding: 30px;
   transition: all 0.3s ease;
 }
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  nav .nav__links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: relative;
+  }
+
+  .hamburger button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .hamburger button * {
+    font-size: calc(35 / 16 * 1rem);
+  }
+
+  .hamburger .hamburger__menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    border-radius: 5px;
+    background-color: var(--body);
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger .hamburger__menu a {
+    padding: 15px 50px;
+    border-bottom: 1px solid #e4e4e4;
+  }
+}
