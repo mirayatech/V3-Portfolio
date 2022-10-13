@@ -14,6 +14,8 @@ import {
   SiGooglechrome,
   SiFigma,
   SiFramer,
+  SiCypress,
+  SiTestinglibrary,
 } from "react-icons/si";
 
 import { IoIosBody } from "react-icons/io";
@@ -80,24 +82,20 @@ export function Skills() {
             <p className="box__name">Firebase</p>
           </div>
           <div className="box">
-            <SiTailwindcss className="box__icon" />
-            <p className="box__name">Tailwind </p>
+            <SiCypress className="box__icon" />
+            <p className="box__name">Cypress (e2e)</p>
+          </div>
+          <div className="box">
+            <SiTestinglibrary className="box__icon" />
+            <p className="box__name">Testing Library</p>
           </div>
           <div className="box">
             <Icon icon="mdi:material-ui" className="box__icon " />
             <p className="box__name">Material UI</p>
-          </div>{" "}
-          <div className="box">
-            <SiFramer className="box__icon" />
-            <p className="box__name">Framer Motion</p>
           </div>
           <div className="box">
             <SiGit className="box__icon " />
             <p className="box__name">Git</p>
-          </div>
-          <div className="box">
-            <IoIosBody className="box__icon " />
-            <p className="box__name">A11Y</p>
           </div>{" "}
           <div className="box">
             <SiFigma className="box__icon " />
@@ -106,10 +104,18 @@ export function Skills() {
           <div className="box">
             <SiGooglechrome className="box__icon " />
             <p className="box__name">Dev Tools</p>
-          </div>
+          </div>{" "}
+          <div className="box">
+            <IoIosBody className="box__icon " />
+            <p className="box__name">A11Y</p>
+          </div>{" "}
           <div className="box">
             <Icon icon="mdi:monitor-cellphone" className="box__icon  " />
             <p className="box__name">Responsive Design</p>
+          </div>
+          <div className="box">
+            <SiFramer className="box__icon" />
+            <p className="box__name">Framer Motion</p>
           </div>
         </div>
       </div>
