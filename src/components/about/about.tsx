@@ -1,36 +1,12 @@
 import "./about.css";
 import "./darkmode.css";
 import "../../App.css";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
 
 import technologist from "../../assets/emojis/technologist.png";
 
 export function About() {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: "-20px",
-        opacity: 1,
-        transition: {
-          duration: 0.5,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView]);
-
   return (
-    <motion.div animate={animation} ref={ref} id="about">
+    <div id="about">
       <div className="wrapper">
         <h3 className="about__title">
           <span className="primary-color">01.</span>Background
@@ -50,12 +26,12 @@ export function About() {
           <span className="thick__text">
             If I'm not doing anything coding related
           </span>
-          , I enjoy reading, drawing and working out.
+          , I enjoy spending time with my family and working out.
         </p>
       </div>
       <div className="about__img">
         <img src={technologist} alt="emoji technologist" />
       </div>
-    </motion.div>
+    </div>
   );
 }

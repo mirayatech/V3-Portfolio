@@ -1,7 +1,4 @@
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import { useInView } from "react-intersection-observer";
-import { animate, motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
 
 import Boruto from "/src/assets/video/boruto.mp4";
 
@@ -19,28 +16,8 @@ import "./darkmode.css";
 import "../../App.css";
 
 export function Project() {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: "-20px",
-        opacity: 1,
-        transition: {
-          duration: 0.5,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView]);
   return (
-    <motion.div animate={animation} ref={ref} id="projects">
+    <div id="projects">
       <h3 className="projects__title">
         <span className="primary-color">03.</span>Projects
       </h3>
@@ -676,6 +653,6 @@ export function Project() {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }

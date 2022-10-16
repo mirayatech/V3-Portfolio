@@ -1,6 +1,3 @@
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
 import {
   SiHtml5,
   SiCss3,
@@ -25,29 +22,8 @@ import "./skills.css";
 import "./darkmode.css";
 
 export function Skills() {
-  const { ref, inView } = useInView({ threshold: 0.2 });
-
-  const animation = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      animation.start({
-        y: "-20px",
-        opacity: 1,
-        transition: {
-          duration: 0.5,
-        },
-      });
-    }
-    if (!inView) {
-      animation.start({
-        opacity: 0,
-      });
-    }
-  }, [inView]);
-
   return (
-    <motion.div animate={animation} ref={ref} id="skills">
+    <div id="skills">
       <div className="skills__wrapper">
         <h3 className="skills__title">
           <span className="primary-color">02.</span>Skills
@@ -117,8 +93,12 @@ export function Skills() {
             <SiFramer className="box__icon" />
             <p className="box__name">Framer Motion</p>
           </div>
+          <div className="box">
+            <SiTailwindcss className="box__icon" />
+            <p className="box__name">Tailwind CSS</p>
+          </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
