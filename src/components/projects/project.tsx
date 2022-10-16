@@ -3,6 +3,8 @@ import { useInView } from "react-intersection-observer";
 import { animate, motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 
+import Boruto from "/src/assets/video/boruto.mp4";
+
 import Instagram from "/src/assets/video/instagram.mp4";
 import Commerce from "/src/assets/video/commerce.mp4";
 import Netflix from "/src/assets/video/netflix.mp4";
@@ -44,6 +46,45 @@ export function Project() {
       </h3>
 
       <div className="projects__container--primary">
+        <div className="wrapper">
+          <video muted loop autoPlay>
+            <source src={Boruto} type="video/mp4" />
+          </video>
+          <div className="project">
+            <div className="project__wrapper">
+              <h3>Boruto</h3>
+              <span>
+                <a
+                  href="https://boruto.vercel.app/"
+                  target="_blank"
+                  className="project-link"
+                >
+                  <FiExternalLink className="arrow" />
+                </a>
+                <a
+                  href="https://github.com/mirayatech/Boruto"
+                  target="_blank"
+                  className="project-link"
+                >
+                  <FiGithub className="arrow" />
+                </a>
+              </span>
+            </div>
+            <p>
+              Boruto allows developers to write articles, share them, and
+              connect with each other. It supports Markdown.
+            </p>
+            <div className="project__language">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Tailwind CSS</span>
+              <span>Cypress</span>
+              <span>E2E Testing</span>
+              <span>Testing Library</span>
+            </div>
+          </div>
+        </div>
+
         <div className="wrapper">
           <video muted loop autoPlay>
             <source src={Instagram} type="video/mp4" />

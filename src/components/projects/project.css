@@ -31,7 +31,8 @@
 #projects .projects__container--primary .wrapper:first-child,
 #projects .projects__container--primary .wrapper:nth-child(3),
 #projects .projects__container--primary .wrapper:nth-child(5),
-#projects .projects__container--primary .wrapper:nth-child(7) {
+#projects .projects__container--primary .wrapper:nth-child(7),
+#projects .projects__container--primary .wrapper:nth-child(9) {
   flex-direction: row-reverse;
 }
 
