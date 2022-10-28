@@ -97,6 +97,7 @@
 
   #projects .wrapper video {
     width: 500px;
+    border: 3px solid red;
   }
 
   #projects .wrapper .project .project__wrapper h3 {

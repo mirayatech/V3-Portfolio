@@ -10,6 +10,7 @@ import Github from "/src/assets/video/github.mp4";
 import Anime from "/src/assets/video/anime.mp4";
 import Toxo from "/src/assets/video/toxo.mp4";
 import Mitsuki from "/src/assets/video/mitsuki.mp4";
+import ChatApp from "/src/assets/video/chatapp.mp4";
 
 import "./project.css";
 import "./darkmode.css";
@@ -24,7 +25,45 @@ export function Project() {
 
       <div className="projects__container--primary">
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
+            <source src={ChatApp} type="video/mp4" />
+          </video>
+          <div className="project">
+            <div className="project__wrapper">
+              <h3>Sabito - Chat App</h3>
+              <span>
+                <a
+                  href="https://sabito.vercel.app/"
+                  target="_blank"
+                  className="project-link"
+                >
+                  <FiExternalLink className="arrow" />
+                </a>
+                <a
+                  href="https://github.com/mirayatech/chat-app"
+                  target="_blank"
+                  className="project-link"
+                >
+                  <FiGithub className="arrow" />
+                </a>
+              </span>
+            </div>
+            <p>
+              Sabito is a realtime chat app. Inspired by Whatsapp and Messenger.
+            </p>
+            <div className="project__language">
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Firebase</span>
+              <span>Framer Motion</span>
+              <br />
+              <span>Styled Components</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="wrapper">
+          <video muted loop autoPlay controls>
             <source src={Boruto} type="video/mp4" />
           </video>
           <div className="project">
@@ -53,17 +92,18 @@ export function Project() {
             </p>
             <div className="project__language">
               <span>React</span>
+              <span>Firebase</span>
               <span>TypeScript</span>
               <span>Tailwind CSS</span>
               <span>Cypress</span>
-              <span>E2E Testing</span>
+              <span>E2E Testing</span> <br />
               <span>Testing Library</span>
             </div>
           </div>
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Instagram} type="video/mp4" />
           </video>
           <div className="project">
@@ -101,7 +141,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Commerce} type="video/mp4" />
           </video>
           <div className="project">
@@ -140,7 +180,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Netflix} type="video/mp4" />
           </video>
           <div className="project">
@@ -177,7 +217,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Note} type="video/mp4" />
           </video>
           <div className="project">
@@ -206,7 +246,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Github} type="video/mp4" />
           </video>
           <div className="project">
@@ -243,7 +283,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Anime} type="video/mp4" />
           </video>
           <div className="project">
@@ -281,7 +321,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Toxo} type="video/mp4" />
           </video>
           <div className="project">
@@ -317,7 +357,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Mitsuki} type="video/mp4" />
           </video>
           <div className="project">
@@ -355,7 +395,7 @@ export function Project() {
 
       <div className="projects__container--secondary">
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Instagram} type="video/mp4" />
           </video>
           <div className="project">
@@ -402,7 +442,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Commerce} type="video/mp4" />
           </video>
           <div className="project">
@@ -441,7 +481,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Netflix} type="video/mp4" />
           </video>
           <div className="project">
@@ -478,7 +518,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Note} type="video/mp4" />
           </video>
           <div className="project">
@@ -507,7 +547,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Github} type="video/mp4" />
           </video>
           <div className="project">
@@ -544,7 +584,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Anime} type="video/mp4" />
           </video>
           <div className="project">
@@ -582,7 +622,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Toxo} type="video/mp4" />
           </video>
           <div className="project">
@@ -618,7 +658,7 @@ export function Project() {
         </div>
 
         <div className="wrapper">
-          <video muted loop autoPlay>
+          <video muted loop autoPlay controls>
             <source src={Mitsuki} type="video/mp4" />
           </video>
           <div className="project">
