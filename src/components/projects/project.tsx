@@ -68,7 +68,7 @@ export function Project() {
           </video>
           <div className="project">
             <div className="project__wrapper">
-              <h3>Boruto</h3>
+              <h3>Boruto - Blog App</h3>
               <span>
                 <a
                   href="https://boruto.vercel.app/"
