@@ -38,6 +38,8 @@
 
 #projects .wrapper video {
   width: 350px;
+  border: 2px solid var(--blue-light-theme);
+  border-radius: 6px;
 }
 
 #projects .wrapper .project .project__wrapper {
@@ -97,7 +99,6 @@
 
   #projects .wrapper video {
     width: 500px;
-    border: 3px solid red;
   }
 
   #projects .wrapper .project .project__wrapper h3 {
