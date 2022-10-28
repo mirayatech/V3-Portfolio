@@ -39,6 +39,7 @@
 }
 
 #skills .wrapper .box .box__icon {
+  color: var(--blue-light-theme);
   font-size: calc(35 / 16 * 1rem);
   margin-bottom: 10px;
 }

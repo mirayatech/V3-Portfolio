@@ -55,6 +55,7 @@
   margin: 0 5px;
   font-size: calc(20 / 16 * 1rem);
   transition: all 0.3s ease;
+  color: var(--blue-light-theme);
 }
 
 #projects .wrapper .project .project__wrapper .arrow:first-child {
