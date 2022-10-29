@@ -70,6 +70,7 @@ export function Project() {
             <div className="project__wrapper">
               <h3>Boruto - Blog App</h3>
               <span>
+                np
                 <a
                   href="https://boruto.vercel.app/"
                   target="_blank"
@@ -172,8 +173,7 @@ export function Project() {
               <span>React</span>
               <span>TypeScript</span>
               <span>Stripe</span>
-              <span>commerce.js</span> <br /> <span>React Hook Form</span>
-              <span>React Router</span>
+              <span>CMS</span> <br /> <span>React Hook Form</span>
               <span>Material UI</span>
             </div>
           </div>
