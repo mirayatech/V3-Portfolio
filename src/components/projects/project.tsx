@@ -70,7 +70,6 @@ export function Project() {
             <div className="project__wrapper">
               <h3>Boruto - Blog App</h3>
               <span>
-                np
                 <a
                   href="https://boruto.vercel.app/"
                   target="_blank"
