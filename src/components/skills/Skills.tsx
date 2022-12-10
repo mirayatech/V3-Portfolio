@@ -13,6 +13,7 @@ import {
   SiFramer,
   SiCypress,
   SiTestinglibrary,
+  SiNextdotjs,
 } from "react-icons/si";
 
 import { IoIosBody } from "react-icons/io";
@@ -52,6 +53,10 @@ export function Skills() {
           <div className="box">
             <SiReact className="box__icon" />
             <p className="box__name">React</p>
+          </div>
+          <div className="box">
+            <SiNextdotjs className="box__icon" />
+            <p className="box__name">Next.js</p>
           </div>
           <div className="box">
             <SiFirebase className="box__icon" />
